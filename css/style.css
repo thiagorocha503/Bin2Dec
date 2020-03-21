@@ -1,0 +1,70 @@
+body {
+    font-size: 16px;
+}
+
+div.container {
+    /*border-radius: 6pt;
+    display: grid;*/
+    margin-left: 25%;
+    padding: 2%;
+    width: 50%;
+    height: 40%;
+    border: 1px #4CAF50;
+}
+
+input {
+    border-radius: 2pt;
+    border: 1px solid #4CAF50;
+    padding: 5px;
+    width: 80%;
+    font-size: 16px;
+}
+
+input.convert {
+    transition-duration: 0.5s;
+    color: white;
+    background-color: #4CAF50;
+}
+
+input.convert:hover {
+    border: 1px solid #4CAF50;
+    color: black;
+    background-color: white;
+}
+
+
+/*  Remove number spinners(Remove) */
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+label {
+    color: #4CAF50;
+}
+
+.title {
+    text-align: center;
+}
+
+div.row,
+.button {
+    padding-top: 10px;
+}
+
+.button {
+    padding-left: 50%;
+}
+
+fieldset {
+    border-radius: 6pt;
+    border: 1px solid #4CAF50;
+}
+
+legend {
+    color: #4CAF50;
+    border: 1px solid;
+    font-weight: bold;
+}
