@@ -36,9 +36,8 @@ input {
 }
 
 #convert:hover {
-    border: 1px solid #4CAF50;
-    color: black;
-    background-color: white;
+    background-color: rgb(64, 148, 67);
+    border-color: rgb(64, 148, 67);
 }
 
 input[type=number]::-webkit-inner-spin-button,
