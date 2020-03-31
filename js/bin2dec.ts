@@ -15,15 +15,15 @@ function onClickConverter() {
         return;
     }
     if(txt_binario.value == ""){
-        alert("Preencha o campo número binario")
+        alert("Fill in the binary number field!");
         return;
     }
     let result: number|null = conveterToBinario(txt_binario.value);
-    let input_decimal: HTMLInputElement = document.getElementById("output-number") as HTMLInputElement;
+    let input_decimal: HTMLInputElement = document.getElementById("output-decimal") as HTMLInputElement;
     if(result != null){
         input_decimal.value = String(result);
     } else{
-        alert("Número inválido!");
+        alert("Invalid number!");
     }
 }
 

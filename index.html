@@ -1,29 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>Bin2DEC</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Bin2Dec</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-    <div class="container">
-        <fieldset>
-            <legend>Calculadora binaria</legend>
-            <div class="row">
-                <label>Binario</label>
-                <input type="number" id="input-binary" maxlength="8" /><br>
-            </div>
-            <div class="row">
-                <label>Decimal</label><input type="number" id="output-number" readonly/><br>
-            </div>
-            <div class="button">
-                <input type="button" value="converter" class="convert" onclick="onClickConverter();">
-            </div>
-        </fieldset>
+    <div id="container">
+        <div id="form">
+            <fieldset>
+                <legend>Binary to decimal number converter</legend>
+                <div class="row">
+                    <label for="input-binary">Binary</label>
+                    <input type="number" id="input-binary">
+                </div>
+                <div class="row">
+                    <label for="output-decimal">Decimal</label>
+                    <input type="number" id="output-decimal" readonly>
+                </div>
+                <div id="buttons" class="row">
+                    <input type="button" value="convert" id="convert" onclick="onClickConverter();">
+                </div>
+            </fieldset>
+        </div>
     </div>
-    <script src="js/bin2dec.js"></script>
+    <script type="text/javascript" src="js/bin2dec.js"></script>
 </body>
 
 </html>
