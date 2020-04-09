@@ -11,15 +11,14 @@ txt_binario.addEventListener("keydown",(event) => {
 
 function onClickConverter() {
     let txt_binario: HTMLInputElement = document.getElementById("input-binary") as HTMLInputElement;
-    if(txt_binario == null){
-        return;
-    }
-    if(txt_binario.value == ""){
-        alert("Fill in the binary number field!");
-        return;
-    }
-    let result: number|null = conveterToBinario(txt_binario.value);
     let input_decimal: HTMLInputElement = document.getElementById("output-decimal") as HTMLInputElement;
+    input_decimal.value = "";
+    if(txt_binario.value == ""){  
+        alert("Fill in the binary number field!"); 
+        return;
+    }
+    let result: number|null = convertToBinary(txt_binario.value);
+    
     if(result != null){
         input_decimal.value = String(result);
     } else{
@@ -27,20 +26,19 @@ function onClickConverter() {
     }
 }
 
-function conveterToBinario(text: string): number|null {
+function convertToBinary(text: string): number|null {
     let result: number = 0;
-    let multiplier: number = 1;
+    let exponent: number = 0;
     for (let i = text.length-1; i >= 0; i--) {
         let digit: number = parseInt(text[i]);
         if (isNaN(digit)) {
             return null;
         }
-        if(digit < 0 || digit > 1){
+        if(digit != 1 && digit != 0){
             return null;
         }
-        result += digit * multiplier;
-        multiplier *= 2;
-        
+        result += digit * Math.pow(2, exponent);
+        exponent+=1;
     }
     return result;
 }
