@@ -1,43 +1,47 @@
+/*  Reset CSS */
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+
+/* geral */
+
 body {
     color: #4CAF50;
 }
 
 #container {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    /*border: 1px solid blue;*/
-    flex-direction: row;
-    justify-content: center;
-    /*align-items: center;*/
+    position: relative;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
 }
 
-label {
-    color: #4CAF50;
-    /*border: 1px solid blueviolet;*/
-    display: inline-block;
-    width: 4em;
-}
-
-.row {
-    /*border: 1px solid greenyellow;*/
+#form {
+    margin: 5px;
     padding: 5px;
 }
 
-input {
-    border-radius: 2pt;
+fieldset {
     border: 1px solid #4CAF50;
+    border-radius: 3px;
+    margin: 5px;
+    padding: 5px;
 }
 
-#convert {
-    transition-duration: 0.5s;
-    color: white;
-    background-color: #4CAF50;
+legend {
+    text-align: center;
 }
 
-#convert:hover {
-    background-color: rgb(64, 148, 67);
-    border-color: rgb(64, 148, 67);
+input[type="number"] {
+    border: 1px solid #4CAF50;
+    border-radius: 3px;
+    font-size: smaller;
 }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -46,12 +50,76 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 0;
 }
 
-fieldset {
-    border-radius: 6pt;
-    border: 1px solid #4CAF50;
+.button {
+    border: 3px solid #4CAF50;
+    border-radius: 2px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    padding: 2px;
 }
 
-#buttons {
-    float: right;
-    /*border: 1px solid hotpink;*/
+.button:hover {
+    opacity: 0.9;
+}
+
+
+/* mobile */
+
+.row {
+    display: block;
+    width: 100%;
+    padding: 5px;
+}
+
+label,
+input[type="number"] {
+    display: block;
+    font-size: small;
+    width: 100%;
+}
+
+#button-convert {
+    display: block;
+    width: 20px;
+    width: 100%;
+}
+
+
+/* Desktop */
+
+@media screen and (min-width: 600px) {
+    #container {
+        width: 600px;
+    }
+    fieldset {
+        border-width: 2px;
+        padding: 15px;
+    }
+    .row {
+        margin-top: 5px;
+        overflow: hidden;
+    }
+    label {
+        display: inline-block;
+        width: 4em;
+        font-size: x-large;
+    }
+    legend {
+        font-size: x-large;
+    }
+    input[type="number"] {
+        display: inline-block;
+        width: 426px;
+        font-size: x-large;
+        border-width: 2px;
+    }
+    .button {
+        font-size: x-large;
+        padding: 5px 10px 5px 10px;
+    }
+    #button-convert {
+        width: auto;
+        float: right;
+    }
 }
