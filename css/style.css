@@ -36,12 +36,13 @@ fieldset {
 
 legend {
     text-align: center;
+    font-size: large;
 }
 
 input[type="number"] {
     border: 1px solid #4CAF50;
     border-radius: 3px;
-    font-size: smaller;
+    font-size: medium;
 }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -57,6 +58,7 @@ input[type=number]::-webkit-outer-spin-button {
     color: white;
     cursor: pointer;
     padding: 2px;
+    font-size: medium;
 }
 
 .button:hover {
@@ -75,13 +77,12 @@ input[type=number]::-webkit-outer-spin-button {
 label,
 input[type="number"] {
     display: block;
-    font-size: small;
+    font-size: medium;
     width: 100%;
 }
 
 #button-convert {
     display: block;
-    width: 20px;
     width: 100%;
 }
 
@@ -90,6 +91,7 @@ input[type="number"] {
 
 @media screen and (min-width: 600px) {
     #container {
+        margin-top: 30px;
         width: 600px;
     }
     fieldset {
