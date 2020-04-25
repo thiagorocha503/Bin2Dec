@@ -46,6 +46,7 @@ input[type="number"] {
     text-indent: 6px;
     height: 40px;
     outline: none;
+    color: rgb(0, 0, 0, 90%)
 }
 
 input[type="number"]:focus {
@@ -79,6 +80,7 @@ input[type=number]::-webkit-outer-spin-button {
     display: block;
     width: 100%;
     padding: 5px;
+    margin-bottom: 4px;
 }
 
 label,
@@ -91,6 +93,16 @@ input[type="number"] {
 #button-convert {
     display: block;
     width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .button {
+        height: 42px;
+    }
+    input[type="number"] {
+        height: 40px;
+        font-size: 16;
+    }
 }
 
 
@@ -126,6 +138,7 @@ input[type="number"] {
     .button {
         font-size: x-large;
         padding: 5px 10px 5px 10px;
+        border-radius: 5px;
     }
     #button-convert {
         width: auto;

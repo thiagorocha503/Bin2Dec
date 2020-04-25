@@ -10,7 +10,7 @@ function onClickConverter() {
     var input_decimal = document.getElementById("output-decimal");
     input_decimal.value = "";
     if (txt_binario.value == "") {
-        alert("Fill in the binary number field!");
+        alert("Fill in the binary number field");
         return;
     }
     var result = convertToBinary(txt_binario.value);

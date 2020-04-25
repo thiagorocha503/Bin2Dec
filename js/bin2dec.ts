@@ -14,7 +14,7 @@ function onClickConverter() {
     let input_decimal: HTMLInputElement = document.getElementById("output-decimal") as HTMLInputElement;
     input_decimal.value = "";
     if(txt_binario.value == ""){  
-        alert("Fill in the binary number field!"); 
+        alert("Fill in the binary number field"); 
         return;
     }
     let result: number|null = convertToBinary(txt_binario.value);
