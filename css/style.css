@@ -46,7 +46,7 @@ input[type="number"] {
     text-indent: 6px;
     height: 40px;
     outline: none;
-    color: rgb(0, 0, 0, 90%)
+    color: rgb(0, 0, 0, 90%);
 }
 
 input[type="number"]:focus {
@@ -55,9 +55,13 @@ input[type="number"]:focus {
 
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+        -webkit-appearance: none;
+        margin: 0;
 }
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
 
 .button {
     border: 3px solid #4CAF50;
@@ -66,7 +70,7 @@ input[type=number]::-webkit-outer-spin-button {
     color: white;
     cursor: pointer;
     padding: 2px;
-    font-size: medium;
+    font-size: large;
 }
 
 .button:hover {
@@ -86,7 +90,7 @@ input[type=number]::-webkit-outer-spin-button {
 label,
 input[type="number"] {
     display: block;
-    font-size: medium;
+    font-size: large;
     width: 100%;
 }
 
@@ -131,7 +135,6 @@ input[type="number"] {
     }
     input[type="number"] {
         display: inline-block;
-        width: 426px;
         font-size: x-large;
         border-width: 2px;
     }
