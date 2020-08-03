@@ -1,33 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bin2Dec</title>
-    <link type="text/css" rel="stylesheet" href="css/style.css" />
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bin2Dec</title>
+        <link type="text/css" rel="stylesheet" href="css/style.css" />
+    </head>
 
-<body>
-    <div id="container">
-        <div id="form">
-            <fieldset>
-                <legend>Binary to decimal number converter</legend>
-                <div class="row">
-                    <label for="input-binary">Binary</label>
-                    <input type="number" id="input-binary" placeholder="Enter binary number" />
+    <body>
+        <div id="page-container">
+            <div id="content-wrap">
+                <div id="app">
+                    <div id="form">
+                        <fieldset>
+                            <legend>Binary to decimal number converter</legend>
+                            <div class="row">
+                                <label for="input-binary">Binary</label>
+                                <input type="number" id="input-binary" placeholder="Enter binary number" />
+                            </div>
+                            <div class="row">
+                                <label for="output-decimal">Decimal</label>
+                                <input type="number" id="output-decimal" readonly>
+                            </div>
+                            <div class="row">
+                                <input type="button" value="Convert" class="button" id="button-convert" onclick="onClickConverter();">
+                            </div>
+                        </fieldset>     
+                    </div>
                 </div>
-                <div class="row">
-                    <label for="output-decimal">Decimal</label>
-                    <input type="number" id="output-decimal" readonly>
-                </div>
-                <div class="row">
-                    <input type="button" value="Convert" class="button" id="button-convert" onclick="onClickConverter();">
-                </div>
-            </fieldset>
+            </div>
+            <footer id="footer">
+                <p id="footer-content">Made with <span id="heart-emoji">❤</span> by <a href="http://github.com/thiagorocha503/" target="_blank" id="github-link" rel="noopener noreferrer">Thiago Rocha</a></p>
+            </footer>
         </div>
-    </div>
-    <script type="text/javascript" src="js/bin2dec.js"></script>
-</body>
-
+        <script type="text/javascript" src="js/bin2dec.js"></script>
+    </body>
 </html>
