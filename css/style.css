@@ -5,7 +5,7 @@
     padding: 0;
     border: 0;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     font-family: Helvetica, Arial, "Arial Black" sans-serif;
 }
 
@@ -50,12 +50,10 @@
     text-decoration: underline;
 }
 
-
 /* geral */
 
 body {
-    color: #4CAF50;
-
+    color: #4caf50;
 }
 
 #app {
@@ -71,7 +69,7 @@ body {
 }
 
 fieldset {
-    border: 1.5px solid #4CAF50;
+    border: 1.5px solid #4caf50;
     border-radius: 3px;
     margin: 5px;
     padding: 5px;
@@ -93,23 +91,23 @@ input[type="number"] {
 }
 
 input[type="number"]:focus {
-    border-color: #4CAF50;
+    border-color: #4caf50;
 }
 
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
-input[type=number] {
-    -moz-appearance:textfield;
+input[type="number"] {
+    appearance: textfield;
+    -moz-appearance: textfield;
 }
-
 
 .button {
-    border: 3px solid #4CAF50;
+    border: 3px solid #4caf50;
     border-radius: 2px;
-    background-color: #4CAF50;
+    background-color: #4caf50;
     color: white;
     cursor: pointer;
     padding: 2px;
@@ -119,7 +117,6 @@ input[type=number] {
 .button:hover {
     opacity: 0.9;
 }
-
 
 /* mobile */
 .row {
@@ -136,7 +133,7 @@ input[type="number"] {
     width: 100%;
 }
 
-#button-convert {
+#btn-convert {
     display: block;
     width: 100%;
 }
@@ -150,7 +147,6 @@ input[type="number"] {
         font-size: 16;
     }
 }
-
 
 /* Desktop */
 
@@ -185,7 +181,7 @@ input[type="number"] {
         padding: 5px 15px 5px 15px;
         border-radius: 5px;
     }
-    #button-convert {
+    #btn-convert {
         width: auto;
         float: right;
     }
